@@ -19,7 +19,7 @@ import org.springframework.context.annotation.ComponentScan.Filter;
         value = {"com.myspring"},
         includeFilters = {@Filter(
                 type = FilterType.CUSTOM,
-                classes = {}
+                classes = {MyTypeFilter.class} //CUSTOM 自定义扫描，在容器中注册组件
         )},
         useDefaultFilters = false
 )})
